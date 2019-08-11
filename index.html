@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"> 
+  </script>
+</head>
+
+<body>
+
+    <div class="header-container">
+
+        <div style="position: fixed">
+            <div class="header-name">
+                <a href="/"> H.Perigo </a>
+                <p> C++, Creative Coding, Motion </p>
+            </div>
+            <div class="header-links">
+                <a> &#9695;Works </a>
+                    
+						<a class="works" href="pages/Belas Artes.html" class="done">Belas Artes</a>
+                    
+						<a class="works" href="pages/Borea.html" class="done">Borea</a>
+                    
+						<a class="works" href="pages/Circulatory System.html" class="done">Circulatory System</a>
+                    
+						<a class="works" href="pages/Planeta Humano.html" class="done">Planeta Humano</a>
+                    
+						<a class="works" href="pages/Ford.html" class="done">Ford</a>
+                    
+						<a class="works" href="pages/Jacto.html" class="done">Jacto</a>
+                    
+						<a class="works" href="pages/Kinoforum.html" class="done">Kinoforum</a>
+                    
+						<a class="works" href="pages/Kodark.html" class="done">Kodark</a>
+                    
+						<a class="works" href="pages/Lacta.html" class="done">Lacta</a>
+                    
+						<a class="works" href="pages/Mesa e Cadeira.html" class="done">Mesa e Cadeira</a>
+                    
+						<a class="works" href="pages/Nuvem Histórica.html" class="done">Nuvem Histórica</a>
+                    
+						<a class="works" href="pages/PAP.html" class="done">PAP</a>
+                    
+						<a class="works" href="pages/Stop Play Moon.html" class="done">Stop Play Moon</a>
+                    
+						<a class="works" href="pages/Um Teto para meu país.html" class="done">Um Teto para meu país</a>
+                    
+						<a class="works" href="pages/Twitter.html" class="done">Twitter</a>
+                    
+                <a> About </a>
+                <a> R&D </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <!--  -->
+
+        <!-- <div class="collumn"> -->
+            
+                <div class="item">
+					<a href="pages/Belas Artes.html" class="done">
+                    	<img src="static/images/BelasArtes_thumb.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Borea.html" class="done">
+                    	<img src="static/images/borea_thumb.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Circulatory System.html" class="done">
+                    	<img src="static/images/csys.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Planeta Humano.html" class="done">
+                    	<img src="static/images/discovery-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Ford.html" class="done">
+                    	<img src="static/images/ford-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Jacto.html" class="done">
+                    	<img src="static/images/jacto-thumb.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Kinoforum.html" class="done">
+                    	<img src="static/images/kino-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Kodark.html" class="done">
+                    	<img src="static/images/kodark_thumb.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Lacta.html" class="done">
+                    	<img src="static/images/lacta-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Mesa e Cadeira.html" class="done">
+                    	<img src="static/images/m_e_c.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Nuvem Histórica.html" class="done">
+                    	<img src="static/images/nuvem-thumb2.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/PAP.html" class="done">
+                    	<img src="static/images/pap-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Stop Play Moon.html" class="done">
+                    	<img src="static/images/spm-thumb_2.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Um Teto para meu país.html" class="done">
+                    	<img src="static/images/teto-thumb.png" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item">
+					<a href="pages/Twitter.html" class="done">
+                    	<img src="static/images/tw_FULL_3.gif" style="width:100%;"/>
+					</a>
+                </div>
+            
+        <!-- </div> -->
+    </div>
+
+    <script>
+            console.log("hey!");
+            let activeNumberOfCollumns = 0;
+            function createColluns( numberOfCollumns ){
+                
+                if( activeNumberOfCollumns == numberOfCollumns ){
+                    return;
+                }
+
+                let elements = document.getElementsByClassName( "item" );
+                let elementsArray = new Array();
+    
+                //push Html node list to array and remove them
+                for( var i = 0; i < elements.length; i++ ){
+                    let element = elements[i];
+                    elementsArray.push( element );
+                }
+
+                // remove active collumns
+                $(".collumn").remove();
+
+                //create Collumns 
+                let collumunsArray = new Array();
+                let mainContainer = document.getElementsByClassName("flex-container")[0];
+                for(var i = 0; i < numberOfCollumns; i++)  {
+                    let collumn = document.createElement("div");
+                    collumn.className = "collumn";
+                    mainContainer.appendChild( collumn );
+                    collumunsArray.push( collumn );
+                }
+    
+                //split items into colluns
+                for(var i = 0; i < elementsArray.length; i++ ){
+                    collumnIndex = i % (numberOfCollumns);
+                    collumunsArray[collumnIndex].appendChild( elementsArray[i] );
+                }
+                activeNumberOfCollumns = numberOfCollumns;
+            }
+    
+            function getNumberOfCollumns(){
+                var w = window.innerWidth;
+                console.log( w );
+                let value = 0;
+                if( w >= 1200 ){
+                    value =  Math.ceil(w / 320);
+                    console.log(value);
+                    value = Math.min(value, 8 );
+                }
+                else if( w <= 1200 && w >= 900 ){
+                    value = 3
+                }
+                else if( w <= 900){
+                    value = 1;
+                }
+
+                console.log( value );
+                return value;
+            }
+    
+            function generate() {
+                var numberOfCollumns = getNumberOfCollumns();
+                createColluns( numberOfCollumns );
+            }
+    
+            window.onload = function() {
+                generate();
+                window.addEventListener("resize", generate );
+            };
+        </script>
+</body>
+
+</html>

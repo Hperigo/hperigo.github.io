@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Inconsolata|Noto+Serif|PT+Mono|Signika+Negative');
+
+/* h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: black;
+    max-width: 100px;
+    color:white;
+    font-size: 9pt;
+} */
+
+
+p {
+    background-color: rgba(255, 255, 255, 255);
+    color:black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10pt;
+}
+
+body{
+    margin:0;
+    padding-top: 50px;
+    background-color: white;
+	  display:flex;
+}
+
+.header-container{ 
+    width:300px;
+    /* background-color: lightgray; */
+    top:0;
+    bottom:0;
+    margin-right:60px;
+}
+
+
+.header-name{
+  margin-left: 15px;
+  /* background-color: indianred; */
+}
+
+.header-name a {
+  font-weight: bold;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20pt;
+  /* margin-left: 15px; */
+  color: #131313;
+  margin:0;
+  text-decoration: none;
+}
+
+.header-name p{
+  font-style: italic;
+  font-size: 7pt;
+  color:gray;
+}
+
+
+.header-links{
+  font-family: sans-serif;
+  font-size: 10pt;
+  margin-top:40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-links a{
+  margin-top: 10px;
+}
+
+.header-links .works{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Home Style  */
+	
+	.item{
+		margin-bottom:15px;
+	}
+
+  .item-link-container{
+    margin-bottom: 7px;
+    /* width: fit-content; */
+    /* background-color: #cfc1dc; */
+    padding: 3px;
+  }
+  
+  .item-link-container a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.0vw;
+    color:white;
+  }
+
+
+
+  /*  */
+
+  .collumn{
+    /* background-color:lightblue; */
+    width: 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .flex-container{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+  }
+
+
+
+/* Project page */
+
+
+#project-content{
+	max-width: 640px;
+}
+
+#project-content:nth-child(1){
+	margin-bottom:100px;
+}
+
+#project-content img {
+	width:100%;
+}
+
+#project-content p {
+    font-size: 9pt;
+    margin-top: 10pt;
+	margin-bottom:20pt;
+    line-height: 20pt;
+}
+
+#project-content h4 {
+	width: fit-content;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11pt;
+	text-decoration:underline;
+}
+
+#project-content li{
+
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9pt;
+	font-style:italic;
+	line-height: 17pt;
+}
+
+/*  header  ---- */
+
+.project-header{
+/*    min-height: 30pt; */
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.project-header h1{
+
+    color: white;
+    background-color: black;
+    margin: 0;
+    font-size: 20pt;
+
+}
+
+
+
+.project-header a{
+  font-size:10pt;
+  height: fit-content;
+}
+
+
