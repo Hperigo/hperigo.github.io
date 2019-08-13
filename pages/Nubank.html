@@ -60,18 +60,23 @@
 	<div id="project-area">
 		<div class="project-header"> 
 			 <a href="../index.html" >&#8602; back </a>
-			 <h1> Lacta </h1>
+			 <h1> Nubank </h1>
 		</div>
         <div id="project-content" >
         </div>
 	</div>
         <script>
 			// Generate content with markdown text
-            var text = `<iframe title="vimeo-player" src="https://player.vimeo.com/video/178123452" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            var text = `<iframe width="640" height="350" src="https://www.youtube.com/embed/IoX016ottls" frameborder="0" allowfullscreen=""></iframe>
+  
 
-Motion design piece produced for Twitter by Idea Fixa.
-
-Animation was done by myself, Illustration by Cezar Berger and Nakabachi Issao`
+  
+*Concept:* Edson Pavoni / Spaces and Creatures  
+*Code:* Dmtr.org and Henrique Périgo  
+*Firmware and pixelnode prototype:* Dmtr.org  
+*Pixelnode pcb design, engineering:* Fiozera.com.br   
+Installation produced by *D3*   
+`
             console.log(text);
             var converter = new showdown.Converter();
             var html      = converter.makeHtml(text);

@@ -60,18 +60,45 @@
 	<div id="project-area">
 		<div class="project-header"> 
 			 <a href="../index.html" >&#8602; back </a>
-			 <h1> Lacta </h1>
+			 <h1> JHSF </h1>
 		</div>
         <div id="project-content" >
         </div>
 	</div>
         <script>
 			// Generate content with markdown text
-            var text = `<iframe title="vimeo-player" src="https://player.vimeo.com/video/178123452" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            var text = `<style>
+.jhsf-half-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.jhsf-half-img img{
+    width:49%!important;
+    vertical-align:middle;
+}
 
-Motion design piece produced for Twitter by Idea Fixa.
+</style>
 
-Animation was done by myself, Illustration by Cezar Berger and Nakabachi Issao`
+<div class="jhsf-half-img" markdown>
+![](/static/images/user2.gif)
+![](/static/images/globo.gif)
+</div>
+
+I wrote an application that emulates touch screens using microsoft Kinect and P5. 
+
+The app would count the number of points inside a cube. If that number is bigger than a certain threshold, a signal is send to the main Macromedia Flash application.
+
+The second app is a "watchdog" application written in cocoa/objective-c that ensured that the system was running in sync
+
+![](/static/images/Jhsf_Kinect.png)
+
+![](/static/images/keepJHSF.png)
+
+Last but not least, I also did a couple of 3d renders.
+
+![](/static/images/globo2.gif)
+`
             console.log(text);
             var converter = new showdown.Converter();
             var html      = converter.makeHtml(text);

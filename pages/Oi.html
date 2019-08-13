@@ -60,18 +60,23 @@
 	<div id="project-area">
 		<div class="project-header"> 
 			 <a href="../index.html" >&#8602; back </a>
-			 <h1> Lacta </h1>
+			 <h1> Oi </h1>
 		</div>
         <div id="project-content" >
         </div>
 	</div>
         <script>
 			// Generate content with markdown text
-            var text = `<iframe title="vimeo-player" src="https://player.vimeo.com/video/178123452" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            var text = `<iframe width="640" height="360" src="https://www.youtube.com/embed/Iwf7qOS2n7E" frameborder="0" allowfullscreen=""></iframe>
 
-Motion design piece produced for Twitter by Idea Fixa.
+Software to generate infinite variations on Oi Telecom visual identity.
+Export vector files and movies. Built by Henrique Périgo and Dmtr.org by the apointment of Futurebrand (Jonas Pacheco).
+Made with Cinder https://libcinder.org/
 
-Animation was done by myself, Illustration by Cezar Berger and Nakabachi Issao`
+![](/static/images/oi_3.png)
+![](/static/images/oi_1.jpg)
+![](/static/images/oi_2.jpg)
+`
             console.log(text);
             var converter = new showdown.Converter();
             var html      = converter.makeHtml(text);
