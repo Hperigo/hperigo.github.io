@@ -61,10 +61,39 @@ body{
   margin-left: 30px;
   display: flex;
   flex-direction: column;
+  
+}
+
+.header-links h4{
+  margin: 0;
+  font-weight: normal;
+}
+
+.header-links #about{
+  margin-bottom: 10px;
+  color: black; 
+  width: fit-content;
+  text-decoration: none;
+  padding-right : 5px;
+}
+
+.header-links #about:hover{
+  background-color: black;
+  color:white;
 }
 
 .header-links a{
   margin-top: 10px;
+  color: #7b5dd0; 
+  width: fit-content;
+  text-decoration: none;
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+.header-links a:hover{
+  background-color: black;
+  color:white;
 }
 
 .header-links .works{
@@ -113,9 +142,9 @@ body{
 
 /* Project page */
 
-
-#project-content{
-	max-width: 640px;
+#project-area{
+  max-width: 640px;
+  padding-right: 10px;
 }
 
 #project-content:nth-child(1){
@@ -170,7 +199,9 @@ body{
     background-color: black;
     margin: 0;
     font-size: 20pt;
-
+    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
