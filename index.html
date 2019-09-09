@@ -10,6 +10,75 @@
 </head>
 
 <body>
+    <script>
+            console.log("hey!");
+            let activeNumberOfCollumns = 0;
+            function createColluns( numberOfCollumns ){
+                
+                if( activeNumberOfCollumns == numberOfCollumns ){
+                    return;
+                }
+
+                let elements = document.getElementsByClassName( "item" );
+                let elementsArray = new Array();
+    
+                //push Html node list to array and remove them
+                for( var i = 0; i < elements.length; i++ ){
+                    let element = elements[i];
+                    elementsArray.push( element );
+                }
+
+                // remove active collumns
+                $(".collumn").remove();
+
+                //create Collumns 
+                let collumunsArray = new Array();
+                let mainContainer = document.getElementsByClassName("flex-container")[0];
+                for(var i = 0; i < numberOfCollumns; i++)  {
+                    let collumn = document.createElement("div");
+                    collumn.className = "collumn";
+                    mainContainer.appendChild( collumn );
+                    collumunsArray.push( collumn );
+                }
+    
+                //split items into colluns
+                for(var i = 0; i < elementsArray.length; i++ ){
+                    collumnIndex = i % (numberOfCollumns);
+                    collumunsArray[collumnIndex].appendChild( elementsArray[i] );
+                }
+                activeNumberOfCollumns = numberOfCollumns;
+            }
+    
+            function getNumberOfCollumns(){
+                var w = window.innerWidth;
+                console.log( w );
+                let value = 0;
+                if( w >= 1200 ){
+                    value =  Math.ceil(w / 320);
+                    console.log(value);
+                    value = Math.min(value, 8 );
+                }
+                else if( w <= 1200 && w >= 900 ){
+                    value = 3
+                }
+                else if( w <= 900){
+                    value = 1;
+                }
+
+                console.log( value );
+                return value;
+            }
+    
+            function generate() {
+                var numberOfCollumns = getNumberOfCollumns();
+                createColluns( numberOfCollumns );
+            }
+    
+            window.onload = function() {
+                generate();
+                window.addEventListener("resize", generate );
+            };
+        </script>
 
     <div class="header-container">
         <div>
@@ -23,7 +92,7 @@
                     
 						<a class="works" href="pages/Oi.html" class="done">Oi</a>
                     
-						<a class="works" href="pages/Nubank.html" class="done">Nubank</a>
+						<a class="works" href="pages/Nubank.html" class="done">Nubank 🤯</a>
                     
 						<a class="works" href="pages/Belas Artes.html" class="done">Belas Artes</a>
                     
@@ -168,75 +237,6 @@
         <!-- </div> -->
     </div>
 
-    <script>
-            console.log("hey!");
-            let activeNumberOfCollumns = 0;
-            function createColluns( numberOfCollumns ){
-                
-                if( activeNumberOfCollumns == numberOfCollumns ){
-                    return;
-                }
-
-                let elements = document.getElementsByClassName( "item" );
-                let elementsArray = new Array();
-    
-                //push Html node list to array and remove them
-                for( var i = 0; i < elements.length; i++ ){
-                    let element = elements[i];
-                    elementsArray.push( element );
-                }
-
-                // remove active collumns
-                $(".collumn").remove();
-
-                //create Collumns 
-                let collumunsArray = new Array();
-                let mainContainer = document.getElementsByClassName("flex-container")[0];
-                for(var i = 0; i < numberOfCollumns; i++)  {
-                    let collumn = document.createElement("div");
-                    collumn.className = "collumn";
-                    mainContainer.appendChild( collumn );
-                    collumunsArray.push( collumn );
-                }
-    
-                //split items into colluns
-                for(var i = 0; i < elementsArray.length; i++ ){
-                    collumnIndex = i % (numberOfCollumns);
-                    collumunsArray[collumnIndex].appendChild( elementsArray[i] );
-                }
-                activeNumberOfCollumns = numberOfCollumns;
-            }
-    
-            function getNumberOfCollumns(){
-                var w = window.innerWidth;
-                console.log( w );
-                let value = 0;
-                if( w >= 1200 ){
-                    value =  Math.ceil(w / 320);
-                    console.log(value);
-                    value = Math.min(value, 8 );
-                }
-                else if( w <= 1200 && w >= 900 ){
-                    value = 3
-                }
-                else if( w <= 900){
-                    value = 1;
-                }
-
-                console.log( value );
-                return value;
-            }
-    
-            function generate() {
-                var numberOfCollumns = getNumberOfCollumns();
-                createColluns( numberOfCollumns );
-            }
-    
-            window.onload = function() {
-                generate();
-                window.addEventListener("resize", generate );
-            };
-        </script>
 </body>
 
 
