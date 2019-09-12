@@ -51,7 +51,7 @@
     
             function getNumberOfCollumns(){
                 var w = window.innerWidth;
-                console.log( w );
+            	//console.log( w );
                 let value = 0;
                 if( w >= 1200 ){
                     value =  Math.ceil(w / 320);
@@ -72,10 +72,13 @@
             function generate() {
                 var numberOfCollumns = getNumberOfCollumns();
                 createColluns( numberOfCollumns );
+				
+				//remove the display:none in the first load
+				$(".item").css({"display" : ""});
             }
     
             window.onload = function() {
-                generate();
+            	generate();
                 window.addEventListener("resize", generate );
             };
         </script>
@@ -90,6 +93,10 @@
                 <a id="about" href="about.html"> About </a>
                 <h4> &#9695;Works </h4>
                     
+						<a class="works" href="pages/Qualcomm 5G.html" class="done">Qualcomm 5G</a>
+                    
+						<a class="works" href="pages/Seated Catalog of Feelings.html" class="done">Seated Catalog of Feelings</a>
+                    
 						<a class="works" href="pages/Oi.html" class="done">Oi</a>
                     
 						<a class="works" href="pages/Nubank.html" class="done">Nubank</a>
@@ -103,6 +110,8 @@
 						<a class="works" href="pages/Planeta Humano.html" class="done">Planeta Humano</a>
                     
 						<a class="works" href="pages/Nuvem Histórica.html" class="done">Nuvem Histórica</a>
+                    
+						<a class="works" href="pages/Local Fabric.html" class="done">Local Fabric</a>
                     
 						<a class="works" href="pages/Ford.html" class="done">Ford</a>
                     
@@ -132,103 +141,121 @@
 
         <!-- <div class="collumn"> -->
             
-                <div class="item">
+                <div class="item" style="display:none">
+					<a href="pages/Qualcomm 5G.html" class="done">
+                    	<img src="static/images/qualcomm5g-thumb.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item" style="display:none">
+					<a href="pages/Seated Catalog of Feelings.html" class="done">
+                    	<img src="static/images/seatedcatalog-thumb.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item" style="display:none">
 					<a href="pages/Oi.html" class="done">
                     	<img src="static/images/oi-thumb.jpg" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Nubank.html" class="done">
                     	<img src="static/images/nubank-thumb.jpg" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Belas Artes.html" class="done">
                     	<img src="static/images/BelasArtes_thumb.jpg" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Stop Play Moon.html" class="done">
                     	<img src="static/images/spm-thumb_2.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Circulatory System.html" class="done">
                     	<img src="static/images/csys.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Planeta Humano.html" class="done">
                     	<img src="static/images/discovery-thumb.png" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Nuvem Histórica.html" class="done">
                     	<img src="static/images/nuvem-thumb2.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
+					<a href="pages/Local Fabric.html" class="done">
+                    	<img src="static/images/localfabric-thumb.jpg" style="width:100%;"/>
+					</a>
+                </div>
+            
+                <div class="item" style="display:none">
 					<a href="pages/Ford.html" class="done">
                     	<img src="static/images/ford-thumb.png" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Jacto.html" class="done">
                     	<img src="static/images/jacto-thumb.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/JHSF.html" class="done">
                     	<img src="static/images/jhsf-thumb.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Kinoforum.html" class="done">
                     	<img src="static/images/kino-thumb.png" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Kodark.html" class="done">
                     	<img src="static/images/kodark_thumb.jpg" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Mesa e Cadeira.html" class="done">
                     	<img src="static/images/m_e_c.jpg" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Borea.html" class="done">
                     	<img src="static/images/borea_thumb.gif" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/PAP.html" class="done">
                     	<img src="static/images/pap-thumb.png" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Um Teto para meu país.html" class="done">
                     	<img src="static/images/teto-thumb.png" style="width:100%;"/>
 					</a>
                 </div>
             
-                <div class="item">
+                <div class="item" style="display:none">
 					<a href="pages/Twitter.html" class="done">
                     	<img src="static/images/tw_FULL_3.gif" style="width:100%;"/>
 					</a>
