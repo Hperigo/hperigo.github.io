@@ -54,10 +54,11 @@
             }
     
             function getNumberOfCollumns(){
-                var w = window.innerWidth;
+                var el = document.getElementsByClassName("flex-container")[0];
+                var w = el.offsetWidth; //window.innerWidth;
             	//console.log( w );
                 let value = 0;
-                if( w >= 1200 ){
+                if( w >= 1000 ){
                     value =  Math.ceil(w / 320);
                     value = Math.min(value, 8 );
                 }
@@ -124,121 +125,127 @@
                 <h4 style="margin-bottom: 10px"> &#9695;Works </h4>
                     
 					
-                    <a id="link-0" class="works" href="pages/Qualcomm 5G.html">
+                    <a id="link-0" class="works" href="pages/Akamai Sculpture.html">
+                        <div>Akamai Sculpture</div>
+                        <div class="tags">[C++, Instalation]</div>
+                    </a>
+                    
+					
+                    <a id="link-1" class="works" href="pages/Qualcomm 5G.html">
                         <div>Qualcomm 5G</div>
                         <div class="tags">[C++, Motion]</div>
                     </a>
                     
 					
-                    <a id="link-1" class="works" href="pages/Seated Catalog of Feelings.html">
+                    <a id="link-2" class="works" href="pages/Seated Catalog of Feelings.html">
                         <div>Seated Catalog of Feelings</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-2" class="works" href="pages/Oi.html">
+                    <a id="link-3" class="works" href="pages/Oi.html">
                         <div>Oi</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-3" class="works" href="pages/Nubank.html">
+                    <a id="link-4" class="works" href="pages/Nubank.html">
                         <div>Nubank</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-4" class="works" href="pages/Belas Artes.html">
+                    <a id="link-5" class="works" href="pages/Belas Artes.html">
                         <div>Belas Artes</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-5" class="works" href="pages/Stop Play Moon.html">
+                    <a id="link-6" class="works" href="pages/Stop Play Moon.html">
                         <div>Stop Play Moon</div>
                         <div class="tags">[Motion]</div>
                     </a>
                     
 					
-                    <a id="link-6" class="works" href="pages/Circulatory System.html">
+                    <a id="link-7" class="works" href="pages/Circulatory System.html">
                         <div>Circulatory System</div>
                         <div class="tags">[C++, Video Mapping]</div>
                     </a>
                     
 					
-                    <a id="link-7" class="works" href="pages/Planeta Humano.html">
+                    <a id="link-8" class="works" href="pages/Planeta Humano.html">
                         <div>Planeta Humano</div>
                         <div class="tags">[Motion, Video Mapping]</div>
                     </a>
                     
 					
-                    <a id="link-8" class="works" href="pages/Nuvem Histórica.html">
+                    <a id="link-9" class="works" href="pages/Nuvem Histórica.html">
                         <div>Nuvem Histórica</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-9" class="works" href="pages/Local Fabric.html">
+                    <a id="link-10" class="works" href="pages/Local Fabric.html">
                         <div>Local Fabric</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-10" class="works" href="pages/Ford.html">
+                    <a id="link-11" class="works" href="pages/Ford.html">
                         <div>Ford</div>
                         <div class="tags">[Motion]</div>
                     </a>
                     
 					
-                    <a id="link-11" class="works" href="pages/Jacto.html">
+                    <a id="link-12" class="works" href="pages/Jacto.html">
                         <div>Jacto</div>
                         <div class="tags">[Web, Javascript]</div>
                     </a>
                     
 					
-                    <a id="link-12" class="works" href="pages/JHSF.html">
+                    <a id="link-13" class="works" href="pages/JHSF.html">
                         <div>JHSF</div>
                         <div class="tags">[C++, Motion]</div>
                     </a>
                     
 					
-                    <a id="link-13" class="works" href="pages/Kinoforum.html">
+                    <a id="link-14" class="works" href="pages/Kinoforum.html">
                         <div>Kinoforum</div>
                         <div class="tags">[Motion, Video Mapping]</div>
                     </a>
                     
 					
-                    <a id="link-14" class="works" href="pages/Kodark.html">
+                    <a id="link-15" class="works" href="pages/Kodark.html">
                         <div>Kodark</div>
                         <div class="tags">[IOs]</div>
                     </a>
                     
 					
-                    <a id="link-15" class="works" href="pages/Mesa e Cadeira.html">
+                    <a id="link-16" class="works" href="pages/Mesa e Cadeira.html">
                         <div>Mesa e Cadeira</div>
                         <div class="tags">[Web, Javascript]</div>
                     </a>
                     
 					
-                    <a id="link-16" class="works" href="pages/Borea.html">
+                    <a id="link-17" class="works" href="pages/Borea.html">
                         <div>Borea</div>
                         <div class="tags">[C++]</div>
                     </a>
                     
 					
-                    <a id="link-17" class="works" href="pages/PAP.html">
+                    <a id="link-18" class="works" href="pages/PAP.html">
                         <div>PAP</div>
                         <div class="tags">[Motion]</div>
                     </a>
                     
 					
-                    <a id="link-18" class="works" href="pages/Um Teto para meu país.html">
+                    <a id="link-19" class="works" href="pages/Um Teto para meu país.html">
                         <div>Um Teto para meu país</div>
                         <div class="tags">[Motion]</div>
                     </a>
                     
 					
-                    <a id="link-19" class="works" href="pages/Twitter.html">
+                    <a id="link-20" class="works" href="pages/Twitter.html">
                         <div>Twitter</div>
                         <div class="tags">[Motion]</div>
                     </a>
@@ -248,12 +255,30 @@
     </div>
 
     <!-- Thumbnails -->
-    <div class="flex-container">
+    <div class="flex-container" style="max-width:1500px">
         
             <div class="item" style="display:none">
-				<a href="pages/Qualcomm 5G.html" class="done" style="display: block">
-                	<img src="static/images/qualcomm5g-thumb.jpg" style="width:100%;"/>
+                <a href="pages/Akamai Sculpture.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/akamai_thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
                     <div id="item-0" class="item-desc">
+                        <p> Akamai Sculpture</p>
+                        <p> [C++, Instalation]</p>
+                    </div>
+				</a>
+            </div>
+        
+            <div class="item" style="display:none">
+                <a href="pages/Qualcomm 5G.html" class="done" style="display: block">
+                    
+                    <img src="static/images/qualcomm5g-thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-1" class="item-desc">
                         <p> Qualcomm 5G</p>
                         <p> [C++, Motion]</p>
                     </div>
@@ -261,9 +286,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Seated Catalog of Feelings.html" class="done" style="display: block">
-                	<img src="static/images/seatedcatalog-thumb.jpg" style="width:100%;"/>
-                    <div id="item-1" class="item-desc">
+                <a href="pages/Seated Catalog of Feelings.html" class="done" style="display: block">
+                    
+                    <img src="static/images/seatedcatalog-thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-2" class="item-desc">
                         <p> Seated Catalog of Feelings</p>
                         <p> [C++]</p>
                     </div>
@@ -271,9 +299,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Oi.html" class="done" style="display: block">
-                	<img src="static/images/oi-thumb.jpg" style="width:100%;"/>
-                    <div id="item-2" class="item-desc">
+                <a href="pages/Oi.html" class="done" style="display: block">
+                    
+                    <img src="static/images/oi-thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-3" class="item-desc">
                         <p> Oi</p>
                         <p> [C++]</p>
                     </div>
@@ -281,9 +312,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Nubank.html" class="done" style="display: block">
-                	<img src="static/images/nubank-thumb.jpg" style="width:100%;"/>
-                    <div id="item-3" class="item-desc">
+                <a href="pages/Nubank.html" class="done" style="display: block">
+                    
+                    <img src="static/images/nubank-thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-4" class="item-desc">
                         <p> Nubank</p>
                         <p> [C++]</p>
                     </div>
@@ -291,9 +325,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Belas Artes.html" class="done" style="display: block">
-                	<img src="static/images/BelasArtes_thumb.jpg" style="width:100%;"/>
-                    <div id="item-4" class="item-desc">
+                <a href="pages/Belas Artes.html" class="done" style="display: block">
+                    
+                    <img src="static/images/BelasArtes_thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-5" class="item-desc">
                         <p> Belas Artes</p>
                         <p> [C++]</p>
                     </div>
@@ -301,9 +338,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Stop Play Moon.html" class="done" style="display: block">
-                	<img src="static/images/spm-thumb_2.gif" style="width:100%;"/>
-                    <div id="item-5" class="item-desc">
+                <a href="pages/Stop Play Moon.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/spm_thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-6" class="item-desc">
                         <p> Stop Play Moon</p>
                         <p> [Motion]</p>
                     </div>
@@ -311,9 +353,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Circulatory System.html" class="done" style="display: block">
-                	<img src="static/images/csys.gif" style="width:100%;"/>
-                    <div id="item-6" class="item-desc">
+                <a href="pages/Circulatory System.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/csys_thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-7" class="item-desc">
                         <p> Circulatory System</p>
                         <p> [C++, Video Mapping]</p>
                     </div>
@@ -321,9 +368,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Planeta Humano.html" class="done" style="display: block">
-                	<img src="static/images/discovery-thumb.png" style="width:100%;"/>
-                    <div id="item-7" class="item-desc">
+                <a href="pages/Planeta Humano.html" class="done" style="display: block">
+                    
+                    <img src="static/images/discovery-thumb.png" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-8" class="item-desc">
                         <p> Planeta Humano</p>
                         <p> [Motion, Video Mapping]</p>
                     </div>
@@ -331,9 +381,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Nuvem Histórica.html" class="done" style="display: block">
-                	<img src="static/images/nuvem-thumb2.gif" style="width:100%;"/>
-                    <div id="item-8" class="item-desc">
+                <a href="pages/Nuvem Histórica.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/nuvem-thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-9" class="item-desc">
                         <p> Nuvem Histórica</p>
                         <p> [C++]</p>
                     </div>
@@ -341,9 +396,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Local Fabric.html" class="done" style="display: block">
-                	<img src="static/images/localfabric-thumb.jpg" style="width:100%;"/>
-                    <div id="item-9" class="item-desc">
+                <a href="pages/Local Fabric.html" class="done" style="display: block">
+                    
+                    <img src="static/images/localfabric-thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-10" class="item-desc">
                         <p> Local Fabric</p>
                         <p> [C++]</p>
                     </div>
@@ -351,9 +409,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Ford.html" class="done" style="display: block">
-                	<img src="static/images/ford-thumb.png" style="width:100%;"/>
-                    <div id="item-10" class="item-desc">
+                <a href="pages/Ford.html" class="done" style="display: block">
+                    
+                    <img src="static/images/ford-thumb.png" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-11" class="item-desc">
                         <p> Ford</p>
                         <p> [Motion]</p>
                     </div>
@@ -361,9 +422,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Jacto.html" class="done" style="display: block">
-                	<img src="static/images/jacto-thumb.gif" style="width:100%;"/>
-                    <div id="item-11" class="item-desc">
+                <a href="pages/Jacto.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/jacto-thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-12" class="item-desc">
                         <p> Jacto</p>
                         <p> [Web, Javascript]</p>
                     </div>
@@ -371,9 +437,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/JHSF.html" class="done" style="display: block">
-                	<img src="static/images/jhsf-thumb.gif" style="width:100%;"/>
-                    <div id="item-12" class="item-desc">
+                <a href="pages/JHSF.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/jhsf-thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-13" class="item-desc">
                         <p> JHSF</p>
                         <p> [C++, Motion]</p>
                     </div>
@@ -381,9 +452,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Kinoforum.html" class="done" style="display: block">
-                	<img src="static/images/kino-thumb.png" style="width:100%;"/>
-                    <div id="item-13" class="item-desc">
+                <a href="pages/Kinoforum.html" class="done" style="display: block">
+                    
+                    <img src="static/images/kino-thumb.png" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-14" class="item-desc">
                         <p> Kinoforum</p>
                         <p> [Motion, Video Mapping]</p>
                     </div>
@@ -391,9 +465,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Kodark.html" class="done" style="display: block">
-                	<img src="static/images/kodark_thumb.jpg" style="width:100%;"/>
-                    <div id="item-14" class="item-desc">
+                <a href="pages/Kodark.html" class="done" style="display: block">
+                    
+                    <img src="static/images/kodark_thumb.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-15" class="item-desc">
                         <p> Kodark</p>
                         <p> [IOs]</p>
                     </div>
@@ -401,9 +478,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Mesa e Cadeira.html" class="done" style="display: block">
-                	<img src="static/images/m_e_c.jpg" style="width:100%;"/>
-                    <div id="item-15" class="item-desc">
+                <a href="pages/Mesa e Cadeira.html" class="done" style="display: block">
+                    
+                    <img src="static/images/m_e_c.jpg" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-16" class="item-desc">
                         <p> Mesa e Cadeira</p>
                         <p> [Web, Javascript]</p>
                     </div>
@@ -411,9 +491,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Borea.html" class="done" style="display: block">
-                	<img src="static/images/borea_thumb.gif" style="width:100%;"/>
-                    <div id="item-16" class="item-desc">
+                <a href="pages/Borea.html" class="done" style="display: block">
+                    
+                    <img src="static/images/borea_thumb.gif" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-17" class="item-desc">
                         <p> Borea</p>
                         <p> [C++]</p>
                     </div>
@@ -421,9 +504,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/PAP.html" class="done" style="display: block">
-                	<img src="static/images/pap-thumb.png" style="width:100%;"/>
-                    <div id="item-17" class="item-desc">
+                <a href="pages/PAP.html" class="done" style="display: block">
+                    
+                    <img src="static/images/pap-thumb.png" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-18" class="item-desc">
                         <p> PAP</p>
                         <p> [Motion]</p>
                     </div>
@@ -431,9 +517,12 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Um Teto para meu país.html" class="done" style="display: block">
-                	<img src="static/images/teto-thumb.png" style="width:100%;"/>
-                    <div id="item-18" class="item-desc">
+                <a href="pages/Um Teto para meu país.html" class="done" style="display: block">
+                    
+                    <img src="static/images/teto-thumb.png" style="width:100%;"/>
+                    
+                                        
+                    <div id="item-19" class="item-desc">
                         <p> Um Teto para meu país</p>
                         <p> [Motion]</p>
                     </div>
@@ -441,9 +530,14 @@
             </div>
         
             <div class="item" style="display:none">
-				<a href="pages/Twitter.html" class="done" style="display: block">
-                	<img src="static/images/tw_FULL_3.gif" style="width:100%;"/>
-                    <div id="item-19" class="item-desc">
+                <a href="pages/Twitter.html" class="done" style="display: block">
+                    
+                    <video autoplay="autoplay" loop="loop" style="width:100%">
+                        <source src="static/images/twitter-thumbnail.mp4" type="video/mp4">  
+                    </video>
+                    
+                                        
+                    <div id="item-20" class="item-desc">
                         <p> Twitter</p>
                         <p> [Motion]</p>
                     </div>
