@@ -163,11 +163,27 @@
  <br>
 **Sosolimited was tasked to create a inspiring lobby experience for Akamai's new headquarters in Boston.**
 
-The visitor is met with a series of touch screens and an interactive light sculpture that gives an scale Akamai's global operation. The Sculpture animation is driven by real data from Akamai's servers and a interactive touch screen application let's the visitor explore different data sets.
+The visitor is met with a series of touch screens and an interactive light sculpture that gives an scale to Akamai's global operation. The Sculpture animation is driven by real data from Akamai's servers and a interactive touch screen application let's the visitor explore different data sets.
+<br>
+<br>
+My first task was to create an app that analyzes Akamai server data throughout the day. With separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.
+<video controls style="width:100%">
+    <source src="/static/images/1_map2.mp4" type="video/mp4">  
+</video>
+<br>
+<br>
+Once we understood the data format we started working on the final OpenFrameworks app. We experimented with different effects and having the ability to edit then on the fly was super important since we would only see the final LED structure at the very end of the project. Each scene was updated in a different thread and then composited together into a framebuffer that you see at the upper left of the video bellow.
+<video controls style="width:100%">
+    <source src="/static/images/2_app_ff.mp4" type="video/mp4">  
+</video>
+<br>
+<br>
+<br>
+An interesting experiment to the project was to add a Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time. 
+<video controls style="width:100%">
+    <source src="/static/images/3_lua_debug.mp4" type="video/mp4">
+</video>
 
-My task was to develop a application using OpenFrameworks that would interpret real internet traffic data from Akamai's servers into a 3d field of pixels. 
-
-I also implemented a scripting layer on top of the main app, That way, we could easily generate test scripts and make sure each led had the correct mapping on site.
 
 more at [Sosolimited](https://www.sosolimited.com/work/akamai/) website`
             console.log(text);
