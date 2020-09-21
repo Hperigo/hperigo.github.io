@@ -208,16 +208,24 @@ body{
 #project-content p {
     font-size: 9pt;
     margin-top: 10pt;
-	margin-bottom:20pt;
+  	margin-bottom:20pt;
     line-height: 20pt;
 }
 
-#project-content h4 {
+#project-content h3 {
 	width: fit-content;
     color: black;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11pt;
+    font-size: 13pt;
 	text-decoration:underline;
+}
+
+#project-content h4 {
+	  width: fit-content;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11pt;
+	  text-decoration:underline;
 }
 
 #project-content li{

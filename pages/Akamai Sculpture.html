@@ -161,11 +161,15 @@
 
  <br>
  <br>
-**Sosolimited was tasked to create a inspiring lobby experience for Akamai's new headquarters in Boston.**
+**Sosolimited was tasked to create an inspiring lobby experience for Akamai's new headquarters in Boston.**
 
 The visitor is met with a series of touch screens and an interactive light sculpture that gives an scale to Akamai's global operation. The Sculpture animation is driven by real data from Akamai's servers and a interactive touch screen application let's the visitor explore different data sets.
+more at [Sosolimited](https://www.sosolimited.com/work/akamai/) website
 <br>
 <br>
+
+#### Technical overview
+
 My first task was to create an app that analyzes Akamai server data throughout the day. With separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.
 <video controls style="width:100%">
     <source src="/static/images/1_map2.mp4" type="video/mp4">  
@@ -179,13 +183,13 @@ Once we understood the data format we started working on the final OpenFramework
 <br>
 <br>
 <br>
-An interesting experiment to the project was to add a Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time. 
+Another interesting experiment to the project was to add a Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time. 
 <video controls style="width:100%">
     <source src="/static/images/3_lua_debug.mp4" type="video/mp4">
 </video>
-
-
-more at [Sosolimited](https://www.sosolimited.com/work/akamai/) website`
+<br>
+<br>
+<br>`
             console.log(text);
             var converter = new showdown.Converter();
             var html      = converter.makeHtml(text);
