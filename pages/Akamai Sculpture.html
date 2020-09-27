@@ -170,13 +170,13 @@ more at [Sosolimited](https://www.sosolimited.com/work/akamai/) website
 
 #### Technical overview
 
-My first task was to create an app that analyzes Akamai server data throughout the day. With separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.
+My first task was to create an app that analyzes Akamai server data throughout the day. With a separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.
 <video controls style="width:100%">
     <source src="/static/images/1_map2.mp4" type="video/mp4">  
 </video>
 <br>
 <br>
-Once we understood the data format we started working on the final OpenFrameworks app. We experimented with different effects and having the ability to edit then on the fly was super important since we would only see the final LED structure at the very end of the project. Each scene was updated in a different thread and then composited together into a framebuffer that you see at the upper left of the video bellow.
+Once we understood the data format we started working on the final OpenFrameworks app. We experimented with different effects and having the ability to edit then on the fly was super important since we would only see the final LED structure at the very end of the project. Each scene was updated in parallel and then composited together into a framebuffer that you see at the upper left of the video bellow.
 <video controls style="width:100%">
     <source src="/static/images/2_app_ff.mp4" type="video/mp4">  
 </video>
