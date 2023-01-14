@@ -1,0 +1,271 @@
+body{
+    color: #383838;
+    font-display: swap;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "JetBrains Mono",monospace;
+    line-height: 1.725;
+    text-rendering: geometricPrecision;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+p{
+    line-height: 17pt;
+    /* font-size: 11pt; */
+    font-size: 0.95em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.center-container{
+    /* background-color:rgb(210, 67, 67); */
+    width: 50%;
+    max-width: 1000px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.content-container {
+    width: 640px;
+    margin-right: auto;
+    /* margin-left: auto; */
+}
+
+.content-container h1{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.content-container img{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.video-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.collumn-container{
+    display: flex;
+    align-items: stretch;
+
+    width:100%;
+    overflow: hidden;
+
+    margin-bottom:20px;
+}
+.collumn-container .collumn{
+    flex: 1;
+}
+
+.collumn {
+    margin:10px;
+}
+
+.collumn img{
+    /* padding:10px; */
+    width:100%;
+}
+
+.desc{
+    color: #4e4b4b;
+    line-height: 15pt;
+    font-size: 0.8em;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+.link-to-home{
+    margin-top:0px;
+    margin-bottom:0px;
+    width : 70px;
+
+    /* padding: 5px 10px 5px 10px; */
+    width:fit-content;
+    border-radius: 10px;
+}
+
+.footer-container{
+    border-top: lightgray;
+    border-top-style: none;
+    border-top-width: medium;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 20px; 
+}
+
+.footer-container
+{
+    margin-top: 100px;   
+    margin-bottom: 200px;
+}
+
+.footer-container img{
+    width:100%;
+}
+
+
+/* --------- NEW LAYOUT ---------*/
+
+.home{
+    width: 50%;
+    max-width: 1000px;
+    min-width: 640px;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+.header-container a:link, a:visited {
+    color: #4e4b4b;
+}
+.header-container a:hover {
+    color: #4e4b4b;
+}
+
+
+.header-name-container {
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+}
+
+.header-name-container h1 {
+    margin: 0;
+}
+
+.header-name-container h4 {
+    margin: 0;
+    font-style: italic;
+    color: #4e4b4b;
+}
+
+.about-section {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.project-sections{
+    border-top: 2px solid black;
+    height:40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-sections a{
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: fit-content;
+    margin: 0;
+}
+
+.project-sections .active {
+
+    background-color: black;
+    color: white;
+}
+
+
+.work-banner-container{
+    margin-bottom: 50px;
+}
+
+.work-banner-container .banner-desc{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.work-banner-container h3{
+    color:black;
+    font-size: 16pt;
+    margin-bottom: 0.3em;
+    text-transform: capitalize;
+}
+
+
+
+/* ----- ARCHIVE CONTAINER ------ */
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.archive-grid h3{
+    font-size: 10pt;
+}
+
+.archive-grid .work-banner-container {
+    overflow: hidden;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.archive-grid .desc {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    html, body {
+        margin: 0;
+        height: 100%;
+
+    }
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: absolute;
+        padding: 10px;
+    }   
+
+    .home{
+        width: 50%;
+        max-width: 1000px;
+        min-width: 450px;
+    }
+    
+
+    .work-banner-container h3{
+        color:black;
+        font-size: 16pt;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+        text-transform: capitalize;
+    }
+
+    .project-sections {
+        font-size: 20px;
+    }
+
+    .link-to-home{ 
+        margin-bottom: 0;
+        font-size: 1.4em;
+    }
+
+    .content-container h1 {
+        margin-top:0px;
+        font-size:2.8em;
+    }
+
+    .content-container h4 {
+        margin-top:0px;
+        font-size:1.8em;
+    }
+}
