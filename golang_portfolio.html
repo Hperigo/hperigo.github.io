@@ -117,7 +117,7 @@
                 <a href=/experiments.html> ☜ back </a>
             </div>
             <h1>Golang Portfolio</h1>
-            <p>A couple of years ago I started experimenting with new programming languages. Up to that point I was mainly working with C++ and I wanted to try out more moderns languages with with simpler compilation processes ( anything other CMake, make or having to deal with linking static libraries in xcode or visual studio)</p>
+            <p>A couple of years ago I started experimenting with new programming languages. Up to that point I was mainly working with C++ and I wanted to try out more modern languages with simpler compilation processes ( anything other CMake, make or having to deal with linking static libraries in xcode or visual studio)</p>
 
 <p>That’s when I ran into go and was really moved by the talk by <strong>Rob Pike - Simplicity is complicated</strong></p>
 
@@ -130,20 +130,20 @@
 <p><strong>Projects</strong></p>
 
 <ol>
-<li>A project is defined by a json file pointing to a markdown or html file for the actual writting and a data folder (for, images, videos specific to that project)</li>
-<li>a input folder containing all the projects</li>
-<li>a json file defining what projects will be compiled into what category (projects, Experiments or Archive )</li>
+<li>A project is defined by a json file pointing to a markdown or html file for the actual written content and a data folder for images, videos specific to that project.</li>
+<li>an input folder containing all the projects</li>
+<li>an json file defining what projects will be compiled into what category (projects, Experiments or Archive )</li>
 </ol>
 
 <p><strong>Build system</strong></p>
 
-<p>It’s in charge of collecting all the projects from the data folder and creating their corresponded HTML page from a markdown or raw text.</p>
+<p>It’s in charge of collecting all projects from the data folder and creating their corresponding HTML page from a markdown or raw text.</p>
 
 <p>It also generates the common components used in the website like header, index, experiments and archive page.</p>
 
 <p><strong>Server</strong></p>
 
-<p>A simple static server using golang standard libraries, it re-generates the HTML at every page, and it’s mainly used as a quick hot-reload development cycle</p>
+<p>A simple static server using golang standard libraries, it re-generates the HTML in every project; and it’s mainly used as a quick hot-reload development cycle</p>
 
 <h3>Program Flow</h3>
 
@@ -171,7 +171,7 @@
 
 <p><strong>Good Parts:</strong></p>
 
-<p>I was really impressed of how much you can accomplish with such a simple language, for example GO only has <code>array</code>, <code>slices</code> and <code>map</code> for container like structures. Comming from  c++ where you have <code>map</code>, <code>unordered_map</code>, <code>list</code>, <code>set</code> etc..  having just two options was , but with time you only really need those data structures, if you need something more complex you can search a library.</p>
+<p>I was really impressed of how much you can accomplish with such a simple language, for example GO only has <code>array</code>, <code>slices</code> and <code>map</code> for container like structures. Coming from  c++ where you have <code>map</code>, <code>unordered_map</code>, <code>list</code>, <code>set</code> etc..  having just two options was strange at first, but with time you only really need those data structures, if you need something more complex you can search a library.</p>
 
 <p>With c++ I always trouble figuring it out if wrote software was using the correct abstraction, with GO you only have a couple of options and it’s really a refreshing feeling because you can focus on finshing the project.</p>
 
