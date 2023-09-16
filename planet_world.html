@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-    <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link
+    href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="/static/main.css" />
+  <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-    <div class="center-container">
-        <div>
+  <div class="center-container">
+    <div>
   <div class="header-container">
     <canvas id="header-canvas"
       style="
@@ -112,14 +115,14 @@
     </script>
 </div>
 
-        <div class='content-container'>
-            <div class="link-to-home">
-                <a href=/index.html> ☜ back </a>
-            </div>
-            <h1>Planet World</h1>
-            <div class="content-container">
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
+      </div>
+      <h1>Planet World</h1>
+      <div class="content-container">
   <div class="video-container">
-    <video controls style="width: 640px">
+    <video controls style="width: 100%">
       <source
         src="/static/images/planet_word-user-input.mp4"
         type="video/mp4"
@@ -128,23 +131,22 @@
     <div class="desc">Openframeworks app running with artificial data</div>
   </div>
   <p>
-    In this interactive installation, Planet World Museum's visitors
-    are asked to answer three simple questions on touch screens: how
-    many languages do you speak? What are these languages? and Where do you currently live?
+    In this interactive installation, Planet World Museum's visitors are asked
+    to answer three simple questions on touch screens: how many languages do you
+    speak? What are these languages? and Where do you currently live?
   </p>
   <p>
     As a reaction to user interaction, an animation featuring colorful bubbles
     appears on screen. Each bubble represents a language and is connected to the
     illustration of a dot, which symbolizes speakers and where they live.
     Related languages were organized into groups of similar colors. If visitors
-    scroll through the connections, they can unfold the story of
-    former visitors
+    scroll through the connections, they can unfold the story of former visitors
   </p>
   <p>
-    The particle system is using a verlet integration method on a
-    secondary thread together with a space partition library made
-    ( simon ). That way we were able to run the physics with around 40k
-    particles even when doing particle to particle collision.
+    The particle system is using a verlet integration method on a secondary
+    thread together with a space partition library made ( simon ). That way we
+    were able to run the physics with around 40k particles even when doing
+    particle to particle collision.
   </p>
   <div class="collumn-container">
     <div class="collumn">
@@ -161,25 +163,31 @@
     <div class="collumn"><img src="/static/images/pw_particles-5.jpg" /></div>
   </div>
   <p>
-    After getting the particle system in a solid state, we moved
-    our focus to making the 3D world. For rendering we simply
-    used an instance system in OpenGL and a geometry shader
-    technique for the line rendering.
+    After getting the particle system in a solid state, we moved our focus to
+    making the 3D world. For rendering we simply used an instance system in
+    OpenGL and a geometry shader technique for the line rendering.
   </p>
   <div class="video-container">
     <video controls style="width: 100%">
-      <source src="/static/images/pw-geometry-shader.mp4#t=0.001" type="video/mp4" />
+      <source
+        src="/static/images/pw-geometry-shader.mp4#t=0.001"
+        type="video/mp4"
+      />
     </video>
     <div class="desc">Bezier line generated with a geometry shader</div>
   </div>
   <div class="video-container">
     <video controls style="width: 100%">
-      <source src="/static/images/pw_call-to-action.mp4#t=0.001" type="video/mp4" />
+      <source
+        src="/static/images/pw_call-to-action.mp4#t=0.001"
+        type="video/mp4"
+      />
     </video>
     <div class="desc">Call to action mode</div>
   </div>
 </div>
 
-        </div>
     </div>
+    <div class="project-footer"></div>
+  </div>
 </body>

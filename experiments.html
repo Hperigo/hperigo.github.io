@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-    <meta name="viewport" content="width=device-width" />
-    <title>Henrique Périgo</title>
+  <meta charset="utf-8" />
+  <link
+    href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="/static/main.css" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Henrique Périgo</title>
 </head>
 
 <body>
-    <div class="center-container home">
-            <div>
+  <div class="center-container home">
+    <div>
   <div class="header-container">
     <canvas id="header-canvas"
       style="
@@ -113,8 +116,7 @@
     main();
     </script>
 </div>
-
-            <div class="about-section">
+ <div class="about-section">
   <p>Hello there!</p>
   <p>
     I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
@@ -126,12 +128,13 @@
   <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
 </div>
 
-        <div class="work-container">
-            <div class="project-sections">
-                <a id="index-link" href="./index.html">Work</a><a id="experiments-link" href="./experiments.html">Experiments</a><a id="archive-link" href="./archive.html">Archive</a>
-            </div>
-            
-                <div class="work-banner-container">
+    <div class="work-container">
+      <div class="project-sections">
+        <a id="index-link" href="./index.html">Work</a
+        ><a id="experiments-link" href="./experiments.html">Experiments</a
+        ><a id="archive-link" href="./archive.html">Archive</a>
+      </div>
+       <div class="work-banner-container">
     <a href=golang_portfolio.html>
         <h3>💡 Golang Portfolio</h3>
         
@@ -142,24 +145,20 @@
             Creating static websites with golang templates
         </div>
     </a>
-</div>
-            
-        </div>
-        <div class="project-sections">
-            
-        </div>
-        <script>
-            const pathname = window.location.pathname;
-            console.log("PATHNAME: ", pathname);
-            if( pathname == "/" || pathname == "/index.html" ){
-                document.getElementById("index-link").classList.add("active")
-            }
-            else if( pathname == "/experiments.html"){
-                document.getElementById("experiments-link").classList.add("active")
-            }
-            else if( pathname == "/archive.html"){
-                document.getElementById("archive-link").classList.add("active")
-            }
-        </script>
+</div> 
     </div>
+    <div class="project-sections">
+      
+    </div>
+    <script>
+      const pathname = window.location.pathname;
+      if (pathname == "/" || pathname == "/index.html") {
+        document.getElementById("index-link").classList.add("active");
+      } else if (pathname == "/experiments.html") {
+        document.getElementById("experiments-link").classList.add("active");
+      } else if (pathname == "/archive.html") {
+        document.getElementById("archive-link").classList.add("active");
+      }
+    </script>
+  </div>
 </body>

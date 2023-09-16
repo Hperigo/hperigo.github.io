@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-    <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link
+    href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="/static/main.css" />
+  <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-    <div class="center-container">
-        <div>
+  <div class="center-container">
+    <div>
   <div class="header-container">
     <canvas id="header-canvas"
       style="
@@ -112,12 +115,12 @@
     </script>
 </div>
 
-        <div class='content-container'>
-            <div class="link-to-home">
-                <a href=/index.html> ☜ back </a>
-            </div>
-            <h1>Akamai Sculpture</h1>
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/447289853" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
+      </div>
+      <h1>Akamai Sculpture</h1>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/447289853" style="width:100%; aspect-ratio:1.6" frameborder="0" allowfullscreen></iframe>
 
 <p><strong>Sosolimited was tasked with creating an inspiring lobby experience for Akamai&rsquo;s new headquarters in Boston.</strong></p>
 
@@ -128,12 +131,13 @@ more at <a href="https://www.sosolimited.com/work/akamai/">Sosolimited</a> websi
 
 <h2>Technical overview</h2>
 
-<p>My first task was to create an app that analyzes Akamai server data throughout the day. With a separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.
+<p>My first task was to create an app that analyzes Akamai server data throughout the day. With a separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.</p>
+
 <div class="video-container">
 <video controls style="width:100%">
-    <source src="/static/images/1_map2.mp4#t=0.001" type="video/mp4"><br>
+    <source src="/static/images/1_map2.mp4#t=0.001" type="video/mp4">  
 </video>
-</div></p>
+</div>
 
 <p>Once we understood the data format we started working on the final OpenFrameworks app. We experimented with different effects and we spend some time creating custom controls with DearImGui; having the ability to edit on the fly was super important since we would only see the final LED structure at the very end of the project. Each scene was updated in parallel and then composed together into a framebuffer shows at the upper left of the video bellow.</p>
 
@@ -145,16 +149,15 @@ more at <a href="https://www.sosolimited.com/work/akamai/">Sosolimited</a> websi
 
 <h3>Lua Scripting</h3>
 
-<p>Another interesting experiment was adding Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time.
+<p>Another interesting experiment was adding Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time.</p>
+
 <div class="video-container">
 <video controls style="width:100%">
     <source src="/static/images/3_lua_debug.mp4#t=0.001" type="video/mp4">
 </video>
 </div>
-<br>
-<br>
-<br></p>
 
-        </div>
     </div>
+    <div class="project-footer"></div>
+  </div>
 </body>

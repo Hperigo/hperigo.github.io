@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-    <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link
+    href="https://fonts.googleapis.com/css?family=JetBrains Mono"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="/static/main.css" />
+  <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-    <div class="center-container">
-        <div>
+  <div class="center-container">
+    <div>
   <div class="header-container">
     <canvas id="header-canvas"
       style="
@@ -112,35 +115,37 @@
     </script>
 </div>
 
-        <div class='content-container'>
-            <div class="link-to-home">
-                <a href=/index.html> ☜ back </a>
-            </div>
-            <h1>White Mirror</h1>
-            <iframe width="640" height="350" src="https://www.youtube.com/embed/IoX016ottls" frameborder="0" allowfullscreen=""></iframe>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
+      </div>
+      <h1>White Mirror</h1>
+      <iframe  style="width:100%; aspect-ratio:1.6" src="https://www.youtube.com/embed/IoX016ottls" frameborder="0" allowfullscreen=""></iframe>
 
 <p>The White Mirror celebrates people’s ever present auras. The sculpture tracks movement through webcams and OpenCV. When two people cross each other&rsquo;s way, their auras &ldquo;collide&rdquo;, creating an explosion of colour.</p>
 
 <h2>Technical overview</h2>
 
-<p>To develop White Mirror, I was in charge of developing the OpenCV Tracking system. I worked alongside Dimitre Lima (dmtr.org) and the product designers of Spaces and Creatures
+<p>To develop White Mirror, I was in charge of developing the OpenCV Tracking system. I worked alongside Dimitre Lima (dmtr.org) and the product designers of Spaces and Creatures</p>
+
 <div class='collumn-container'>
     <div class='collumn'> <img src="/static/images/white_mirror.png"> </div>
 </div>
 <p>
 Because the installation was submitted to a varying source
-of natural light throughout the day, we had to produce an
+of natural light throughout the day, we had to produce an 
 intelligent system that divides the camera feed into several
 sub-tiles. If a specific tile didn’t have a movement to it,
 its image would be used as the mask for background
 subtraction. This allowed us to generate tracking blobs that
 worked in the morning, noon and night.
-</p>
+</p> 
 <div class='collumn-container'>
     <div class='collumn'> <img src="/static/images/white_mirror-2.png"> </div>
     <div class='collumn'> <img src="/static/images/white_mirror-3.png"> </div>
-</div></p>
+</div>
 
-        </div>
     </div>
+    <div class="project-footer"></div>
+  </div>
 </body>
