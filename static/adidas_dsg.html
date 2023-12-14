@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,46 +114,46 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/archive.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
-
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
+      <h1>Adidas DSG</h1>
+      <div style="display:grid; grid-template-columns: repeat(2, 1fr);">
+    <div class="video-container" style="padding: 3px;">
+    <video controls style="width:100%">
+        <source src="/static/images/predator_edge_xr.mp4#t=0.001" type="video/mp4">  
+    </video>
+    </div>
+    <div class="video-container" style="padding: 3px;">
+    <video controls style="width:100%"> 
+        <source src="/static/images/predator_edge_site_2.mp4#t=0.001" type="video/mp4">  
+    </video>
+    </div>
 </div>
- 
+
+<!-- <div> -->
+
+<p>.<strong>CLIENT</strong> .adidas/Dick’s Sporting Goods<br>
+.<strong>ROLE</strong> .Webgl / Graphics Programming<br>
+.<strong>DATE</strong> .2022<br></p>
+
+<!-- </div> -->
+
+<p>To promote the new adidas Predator boot, we developed an XR experience that would showcase the incredible new features. In order to demonstrate the level of craftsmanship and detail that went into every stitch of the product, we created high fidelity 3D sizzle reels for every feature. Each environment was designed to capture the essence of the extended brand campaign.</p>
+
+<p>The experience was designed to be scalable to support future product launches from adidas in DSG stores.</p>
+
+<p>I worked on the Webgl app, more specifically setting up the scene layout, shoe materials, lights and animation.</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/adidas_dsg_-_trailer.mp4#t=0.001" type="video/mp4">  
+</video>
+</div>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>

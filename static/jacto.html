@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,46 +114,31 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
+      <h1>Jacto</h1>
+      <iframe src="https://player.vimeo.com/video/200665581" style="width:100%; aspect-ratio:1.6" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
-</div>
- 
+<p>FutureBrand created a new corporate identity based on the art of kirigami, they created 5 base icons that would later be used to compose illustrations, infographics and overall brand identity</p>
+
+<p>I was commissioned to develop a software that generates complex shapes using those 5 icons. The initial idea was to create a simple tool that creates the iconography based on a bezier path step function. The final result became something similar to Adobe Illustrator, with full bezier editing (add, delete, subdivide), brushes, ctrl+z, custom file saving and png/svg exports, all done in javascript and paper.js</p>
+
+<h4>Agency:</h4>
+
+<p>FutureBrand Brazil</p>
+
+<h4>Software Dev:</h4>
+
+<p>Henrique Périgo</p>
+
+<h4>Front-end Dev:</h4>
+
+<p>José Fernandes ( @zehf )</p>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>

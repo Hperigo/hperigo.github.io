@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,46 +114,45 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
-
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
+      <h1>Sonos fall 2022</h1>
+      <div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/sonos-rings-mouse-interaction.mp4#t=0.001" type="video/mp4">  
+</video>
 </div>
- 
+
+<h3>In 2022 I was tasked with the challenge to create a WebGL landing page for Sonos new product Sub Mini</h3>
+
+<p><a href="https://www.youtube.com/watch?v=WRStgkhjHhw">Sonos promo video</a> had multiple interesting visual elements, but what caught my attention was stripes representing sound waves ( at 13seconds ), I immediately thought those would be an interesting exercise for WebGL and instancing.</p>
+
+<p><img src="/static/images/lines.jpg" alt="sound wave lines" /></p>
+
+<p>Three.js has a function to generate a torus, but since we would need a really high number of objects to represent the lines, added with with animation and custom shading effect it would be costly both memory and cpu wise, especially for low end phone devices</p>
+
+<p>Another way to approach this would be single cylinder geometry with all the data we needed to create a torus; then we would draw each instance and modulate the torus properties like radius and noise in the vertex shader.</p>
+
+<p>The base data is simply a cylinder where we encode a value from 0 to 1. that would later be used to modulate the angle of transformation to bend the geometry into a torus</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/cylinder-to-torus.mp4#t=0.001" type="video/mp4">
+</video>
+</div>
+
+<p>Once that logic was in place, I could just modulate the radius using <code>gl_InstanceID</code>, add noise and other color effects.</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/Rings-debug-view-resized.mp4#t=0.001" type="video/mp4">
+</video>
+</div>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>

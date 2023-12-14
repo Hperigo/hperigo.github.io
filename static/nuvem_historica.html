@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,46 +114,25 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/archive.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
+      <h1>Nuvem Histórica</h1>
+      <p><img src="/static/images/main.jpg" alt="" /></p>
 
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
-</div>
- 
+<p>11 screens, a giant infra-red touch frame, and a c++ application developed using Cinder; that&rsquo;s what it took to build the historical cloud for one of the largest construction corporations in Brazil.</p>
+
+<p>Each screen has a set of items that contains the company landmark history, photos, and other related items (everything in 3 languages, Portuguese, Spanish, and English). Touching the background affects a particle system that is rendered as a delauney mesh. A video can be seen here</p>
+
+<p>This work was done inside Índice studio in partnership with Venosa Design.</p>
+
+<p>The main designers for this project were Jonattas Poltronieri (Art direction) and Igor Sturion.
+<img src="/static/images/kid.gif" alt="" />
+<img src="/static/images/touch.gif" alt="" /></p>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>

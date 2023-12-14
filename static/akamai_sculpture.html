@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,46 +114,50 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/index.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
+      <h1>Akamai Sculpture</h1>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/447289853" style="width:100%; aspect-ratio:1.6" frameborder="0" allowfullscreen></iframe>
 
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
+<p><strong>Sosolimited was tasked with creating an inspiring lobby experience for Akamai&rsquo;s new headquarters in Boston.</strong></p>
+
+<p>The visitor is met with a series of touch screens and an interactive light sculpture that represents the scale and reach of Akamai&rsquo;s global operation. The Sculpture animation is driven by real data from Akamai&rsquo;s servers and an interactive touch screen application let&rsquo;s the visitor explore different data sets.
+more at <a href="https://www.sosolimited.com/work/akamai/">Sosolimited</a> website
+<br>
+<br></p>
+
+<h2>Technical overview</h2>
+
+<p>My first task was to create an app that analyzes Akamai server data throughout the day. With a separate application we could make sure that the data was correct and start imagining how the LED sculpture would react to it.</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/1_map2.mp4#t=0.001" type="video/mp4">  
+</video>
 </div>
- 
+
+<p>Once we understood the data format we started working on the final OpenFrameworks app. We experimented with different effects and we spend some time creating custom controls with DearImGui; having the ability to edit on the fly was super important since we would only see the final LED structure at the very end of the project. Each scene was updated in parallel and then composed together into a framebuffer shows at the upper left of the video bellow.</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/2_app_ff.mp4#t=0.001" type="video/mp4">  
+</video>
+</div>
+
+<h3>Lua Scripting</h3>
+
+<p>Another interesting experiment was adding Lua scripting API to the c++ app. With that functionality we could easily test different effects and if the pendants were mapped in the correct order without the need to re-compile the app every time.</p>
+
+<div class="video-container">
+<video controls style="width:100%">
+    <source src="/static/images/3_lua_debug.mp4#t=0.001" type="video/mp4">
+</video>
+</div>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>
