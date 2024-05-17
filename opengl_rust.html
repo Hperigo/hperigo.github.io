@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <meta charset="utf-8" />
   <link
@@ -8,11 +7,10 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
-  <title>Henrique Périgo</title>
 </head>
 
 <body>
-  <div class="center-container home">
+  <div class="center-container">
     <div>
   <div class="header-container">
     <canvas id="header-canvas"
@@ -116,54 +114,48 @@
     main();
     </script>
 </div>
- <div class="about-section">
-  <p>Hello there!</p>
-  <p>
-    I’m a <b>Senior Creative Coder</b> based in <b>Toronto</b> and currently
-    working for <a target="_blank" href="https://www.jam3.com/">Jam3</a> doing amazing
-    Webgl projects. I consider myself a technical polyglot and here you will
-    find some projects built with C++, Unity and Motion Design, as well as
-    experiments with Rust and Graphics programming.
-  </p>
-  <p>You can reach me at: <i>hperigo[at]gmail.com</i></p>
-</div>
 
-    <div class="work-container">
-      <div class="project-sections">
-        <a id="index-link" href="./index.html">Work</a
-        ><a id="experiments-link" href="./experiments.html">Experiments</a
-        ><a id="archive-link" href="./archive.html">Archive</a>
+    <div class="content-container">
+      <div class="link-to-home">
+        <a href="/experiments.html"> ☜ back </a>
       </div>
-       <div class="work-banner-container">
-  <a href="opengl_rust.html">
-    <h3>🔺 OpenGL and Rust</h3>
-     
-    <img src="/static/images/pira-thumb.jpg" alt="thumb" style="width: 100%" />
-     
-    <div class="desc">My journey learning OpenGL</div>
-  </a>
-</div>
-  <div class="work-banner-container">
-  <a href="golang_portfolio.html">
-    <h3>💡 Golang Portfolio</h3>
-      
-    <div class="desc">Creating static websites with golang templates</div>
-  </a>
-</div>
- 
+      <h1>OpenGL and Rust</h1>
+      <p><img src="static/images/fur.png" alt="opengl fur instances" title="Fur" /></p>
+
+<p>After working multiple years with creative coding frameworks like Processing, Cinder, OpenFrameworks and Three.js I felt that I needed to do a deep dive into graphics programming and really understand the mechanics under the hood of how those frameworks operate.</p>
+
+<p>My main source of material was <a href="https://learnopengl.com/">learnopengl.com</a>. I went trought it with different languages (C, Go, Rust) and it was a great way to solidify the basics of OpenGL but at the end I decided to focus only on Rust, mainly because it has a pretty good build system and nice graphics libraries like <a href="https://github.com/grovesNL/glow">glow</a>, <a href="https://docs.rs/glam/latest/glam/">glam</a> and later <a href="https://github.com/gfx-rs/wgpu">wgpu.rs</a></p>
+
+<p>Currently I&rsquo;m making a second version of this library but using wgpu but here&rsquo;s a couple of screenshots of some of the demos I was able to pull off:</p>
+
+<h3>GLTF loading &amp; Animation playback</h3>
+
+<p><img src="static/images/gltf-fox.webp" alt="gltf animation" title="Fur" />
+Implementing a GLTF loader and the skinned mesh animation into my library was a great learning experience and helped me greatly on the <a href="/google_pixel_arena.html">Google Pixel Arena</a>. Having a deeper understanding of the file format helped me architect the asset pipeline for that project.</p>
+
+<h3>Instances</h3>
+
+<p><img src="static/images/fur.webp" alt="opengl fur instances" title="Fur" /></p>
+
+<p>I really loved making this demo, each &ldquo;fur&rdquo; strand is just an triangle with a top color and a bottom color, with instancing we are able to draw milliions of tris. The final app is really mesmerizing</p>
+
+<h3>Particle System</h3>
+
+<p><img style="width:auto; height=300px" src="static/images/particles.webp"><img></p>
+
+<h3>3d Orbit camera</h3>
+
+<p><img src="static/images/3d_camera.webp" alt="3d camera" title="Fur" /></p>
+
+<p>The orbit camera works with two transforms, one that is the camera final position and another parent that the mouse controls the scale and rotation.</p>
+
+<h3>Frame Buffer Objects</h3>
+
+<p><img src="static/images/fbo.webp" alt="fbo" title="fbo" /></p>
+
+<p>Really basic demo, just renders a circle offscreen and uses that texture to render a quad.</p>
+
     </div>
-    <div class="project-sections">
-      
-    </div>
-    <script>
-      const pathname = window.location.pathname;
-      if (pathname == "/" || pathname == "/index.html") {
-        document.getElementById("index-link").classList.add("active");
-      } else if (pathname == "/experiments.html") {
-        document.getElementById("experiments-link").classList.add("active");
-      } else if (pathname == "/archive.html") {
-        document.getElementById("archive-link").classList.add("active");
-      }
-    </script>
+    <div class="project-footer"></div>
   </div>
 </body>
