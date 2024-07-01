@@ -21,13 +21,15 @@
   />
   <link rel="stylesheet" type="text/css" href="/static/main.css" />
   <meta name="viewport" content="width=device-width" />
+  <title>Henrique Périgo - Coca</title>
 </head>
 
 <body>
   <div class="center-container">
     <div>
   <div class="header-container">
-    <canvas id="header-canvas"
+    <canvas
+      id="header-canvas"
       style="
         width: 100px;
         height: 100px;
@@ -35,13 +37,16 @@
         margin-right: 10px;
       "
     ></canvas>
-    <a class="header-name-container" href="/" >
+    <a class="header-name-container" href="/">
       <h1>Henrique Perigo</h1>
-      <h4>Creative Coding;</h4>
+      <h4>Software development; Graphics Progamming; Creative Coding;</h4>
     </a>
   </div>
 
-  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+  <script
+    async
+    src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+  ></script>
   <script type="importmap">
     {
       "imports": {
@@ -49,23 +54,28 @@
       }
     }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script type="module">
-    import * as THREE from 'three';
-     
+    import * as THREE from "three";
+
     function main() {
       const canvas = document.getElementById("header-canvas");
-      const renderer = new THREE.WebGLRenderer({canvas});
+      const renderer = new THREE.WebGLRenderer({ canvas });
 
       const fov = 75;
-      const aspect = 1;  
+      const aspect = 1; 
       const near = 0.1;
       const far = 5;
       const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
       camera.position.set(0, 0, 1);
       const scene = new THREE.Scene();
-      scene.background = new THREE.Color( 'white' );
-    
+      scene.background = new THREE.Color("black");
+
       const group = new THREE.Group();
       const HALF_PI = 3.14 / 2;
 
@@ -78,55 +88,85 @@
 
         
         
-        
-        {position : new THREE.Vector3(0, 1, 0), rotation : new THREE.Vector3(HALF_PI, 0, 0), color : 0x999999 }, 
-        {position : new THREE.Vector3(0, -1, 0), rotation : new THREE.Vector3(HALF_PI, 0, 0), color : 0x999999 }, 
 
-        {position : new THREE.Vector3(1, 0, 0), rotation : new THREE.Vector3(0, HALF_PI, 0), color : 0x999999 }, 
-        {position : new THREE.Vector3(-1, 0, 0), rotation : new THREE.Vector3(0, HALF_PI, 0), color : 0x999999 }, 
+        {
+          position: new THREE.Vector3(0, 1, 0),
+          rotation: new THREE.Vector3(HALF_PI, 0, 0),
+          color: 0x999999,
+        }, 
+        {
+          position: new THREE.Vector3(0, -1, 0),
+          rotation: new THREE.Vector3(HALF_PI, 0, 0),
+          color: 0x999999,
+        }, 
 
-        {position : new THREE.Vector3(0, 0, -1), rotation : new THREE.Vector3(0, 0, 0), color : 0x999999 }, 
-        {position : new THREE.Vector3(0, 0, 1), rotation : new THREE.Vector3(0, 0, 0), color : 0x999999 }, 
+        {
+          position: new THREE.Vector3(1, 0, 0),
+          rotation: new THREE.Vector3(0, HALF_PI, 0),
+          color: 0x999999,
+        }, 
+        {
+          position: new THREE.Vector3(-1, 0, 0),
+          rotation: new THREE.Vector3(0, HALF_PI, 0),
+          color: 0x999999,
+        }, 
+
+        {
+          position: new THREE.Vector3(0, 0, -1),
+          rotation: new THREE.Vector3(0, 0, 0),
+          color: 0x999999,
+        }, 
+        {
+          position: new THREE.Vector3(0, 0, 1),
+          rotation: new THREE.Vector3(0, 0, 0),
+          color: 0x999999,
+        }, 
       ];
 
-      for(let i = 0; i <faceTransforms.length; i++){
-
+      for (let i = 0; i < faceTransforms.length; i++) {
         const config = faceTransforms[i];
 
-        const material = new THREE.MeshBasicMaterial({color: config.color, side : THREE.DoubleSide, wireframe : true, depthTest : false});
-        const geometry = new THREE.PlaneGeometry( 2, 2 );
+        const material = new THREE.MeshBasicMaterial({
+          color: config.color,
+          side: THREE.DoubleSide,
+          wireframe: true,
+          depthTest: false,
+        });
+        const geometry = new THREE.PlaneGeometry(2, 2);
         let plane = new THREE.Mesh(geometry, material);
-        plane.position.copy( config.position );
-        plane.rotation.set(config.rotation.x, config.rotation.y, config.rotation.z );
+        plane.position.copy(config.position);
+        plane.rotation.set(
+          config.rotation.x,
+          config.rotation.y,
+          config.rotation.z
+        );
         group.add(plane);
       }
-      
 
       scene.add(group);
 
       let frameCount = 0;
       function animate() {
-				requestAnimationFrame( animate );
+        requestAnimationFrame(animate);
 
-
-        if(frameCount % (60 * 10)  == 0){
+        if (frameCount % (60 * 5) == 0) {
           gsap.to(group.rotation, {
-            x : Math.random() * Math.PI,
-            y : Math.random() * Math.PI,
-            duration : 3.0,
+            x: Math.random() * Math.PI,
+            y: Math.random() * Math.PI,
+            duration: 3.0,
             ease: "power2.inOut",
           });
         }
 
         frameCount += 1;
-				renderer.render( scene, camera );
-			};
+        renderer.render(scene, camera);
+      }
 
       animate();
     }
 
     main();
-    </script>
+  </script>
 </div>
 
     <div class="content-container">
