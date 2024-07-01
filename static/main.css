@@ -264,7 +264,7 @@ pre {
 }
 
 .project-sections{
-    border-top: 2px solid #c37878;
+    border-top: 2px solid white;
     height:40px;
     display: flex;
     flex-direction: row;
@@ -279,9 +279,8 @@ pre {
 }
 
 .project-sections .active {
-
-    background-color: #c37878;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .work-banner-container{
@@ -294,7 +293,7 @@ pre {
 }
 
 .work-banner-container h3{
-    color:#f66a6a;
+    color:white;
     font-size: 16pt;
     margin-bottom: 0.3em;
     text-transform: capitalize;
