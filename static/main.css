@@ -112,7 +112,7 @@ pre {
 
 .center-container{
     /* background-color:rgb(210, 67, 67); */
-    width: 50%;
+    width: 75%;
     max-width: 1200px;
     min-width: 640px;
     margin-left: auto;
@@ -136,9 +136,10 @@ pre {
 }
 
 .content-container img{
-    width: 100%;
-    /* margin-bottom: 50px; */
-    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .content-container p a{
@@ -304,6 +305,14 @@ pre {
     height:200px;
     width: 100%;
 }
+.thumb-container {
+    overflow: hidden;
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* ----- ARCHIVE CONTAINER ------ */
