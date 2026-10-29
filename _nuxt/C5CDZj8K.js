@@ -1,0 +1,1 @@
+import{Et as e,G as t,J as n,M as r,T as i,t as a}from"./C4Z3Tf_K.js";var o=Object.assign(a(r({__name:`ProjectFigureGroup`,props:{columns:{default:2}},setup(r){return(a,o)=>(t(),i(`div`,{class:`figure-group`,style:e({"--columns":r.columns})},[n(a.$slots,`default`,{},void 0,!0)],4))}}),[[`__scopeId`,`data-v-a1f16c28`]]),{__name:`ProjectFigureGroup`});export{o as t};

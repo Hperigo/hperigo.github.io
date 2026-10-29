@@ -1,1 +1,0 @@
-import{T as e,Tt as t,W as n,j as r,q as i,t as a}from"./BnsLO3br.js";var o=Object.assign(a(r({__name:`ProjectFigureGroup`,props:{columns:{default:2}},setup(r){return(a,o)=>(n(),e(`div`,{class:`figure-group`,style:t({"--columns":r.columns})},[i(a.$slots,`default`,{},void 0,!0)],4))}}),[[`__scopeId`,`data-v-a1f16c28`]]),{__name:`ProjectFigureGroup`});export{o as t};

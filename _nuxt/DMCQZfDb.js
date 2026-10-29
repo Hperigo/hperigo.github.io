@@ -1,0 +1,1 @@
+import{G as e,T as t,t as n}from"./C4Z3Tf_K.js";var r={},i={class:`spinner`};function a(n,r){return e(),t(`div`,i)}var o=Object.assign(n(r,[[`render`,a],[`__scopeId`,`data-v-9c5bd60e`]]),{__name:`Spinner`});export{o as t};
