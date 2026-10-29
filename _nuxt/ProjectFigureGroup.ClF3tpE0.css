@@ -1,0 +1,1 @@
+.figure-group[data-v-a1f16c28]{grid-template-columns:repeat(var(--columns),minmax(0,1fr));gap:16px;max-width:1000px;margin:40px 0;display:grid}.figure-group[data-v-a1f16c28] .project-figure{margin:0}@media (width<=700px){.figure-group[data-v-a1f16c28]{grid-template-columns:1fr}}

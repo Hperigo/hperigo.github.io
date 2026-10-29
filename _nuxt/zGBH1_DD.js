@@ -1,0 +1,1 @@
+import{T as e,W as t,t as n}from"./BnsLO3br.js";var r={},i={class:`spinner`};function a(n,r){return t(),e(`div`,i)}var o=Object.assign(n(r,[[`render`,a],[`__scopeId`,`data-v-9c5bd60e`]]),{__name:`Spinner`});export{o as t};
